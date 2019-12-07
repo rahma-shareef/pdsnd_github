@@ -17,7 +17,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs    
-     united_city = input('\nWhich city would you like to filter by? New York City, Chicago or Washington?\n').lower()   
+     united_city = input('\nWhich city would you like to filter by? New York City, Chicago or Washington???\n').lower()   
     while true:            
             if united_city in ('New York City', 'Chicago', 'Washington'):
                 break                
@@ -160,7 +160,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 
-def user_stats(df):
+def user(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
@@ -203,7 +203,7 @@ def main():
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
-        user_stats(df)
+        user(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
